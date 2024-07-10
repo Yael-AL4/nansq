@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NAN Squad</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            background-color: black;
+            position: relative;
+            z-index: 1;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+
+        .section {
+            display: none;
+            padding: 20px;
+            background-color: black;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .content-box {
+            background-color: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content-box:hover {
+            background-color: #f0f0f0;
+        }
+
+        #home img {
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .upload-button {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: black;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+
+        .team-background {
+            background-image: url('https://imgs.search.brave.com/8kosx6d8j14jy07iMJLF4Iso-r7UwCm9XTBwZriPiuo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTMuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhOelV5YW1kcGFH/NWhjbXR3TlhGcE9U/SndhbkZ2YlhweWJt/NXpiV2hzTnpKemJH/RnBhSE5yTWlabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vSjBTNjRQdFk3/SHQyY01qOHZRLzIw/MC5naWY.gif');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .team-names {
+            color: black;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <a href="#home" onclick="showSection('home')">Inicio</a>
+        <a href="#doxes" onclick="showSection('doxes')">Doxes</a>
+        <a href="#cracked" onclick="showSection('cracked')">Cracked</a>
+        <a href="#team" onclick="showSection('team')">Team</a>
+    </div>
+
+    <div id="home" class="section active">
+        <center>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/860608952292531464/84B7EC1BF2F39338FABA3B7941AF7C957E83401A/?imw=268&imh=268&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="NAN Squad">
+        </center>
+        <center>
+            <marquee>
+                <h1>#NANSquad #hewillneverdie</h1>
+            </marquee>
+        </center>
+    </div>
+
+    <div id="doxes" class="section">
+        <center>
+            <a href="https://discord.gg/DeeaXpBcRc" target="_blank" class="upload-button">subir Dox</a>
+        </center>
+        <div class="content-box" onclick="showSection('d1')">
+            <h2>Vacant</h2>
+            <p>Doxeado: Vacant</p>
+            <p>author: Vacant</p>
+        </div>
+        <div class="content-box" onclick="showSection('d2')">
+            <h2>Vacant</h2>
+            <p>Doxeado: Vacant</p>
+            <p>author: Vacant</p>
+        </div>
+    </div>
+
+    <div id="d1" class="section">
+        <div class="content-box">
+            <h2>Vacant</h2>
+            <p>Doxeado: Vacant</p>
+            <p>author: Vacant</p>
+        </div>
+    </div>
+
+    <div id="d2" class="section">
+        <div class="content-box">
+            <h2>Vacant</h2>
+            <p>Doxeado: Vacant</p>
+            <p>author: Vacant</p>
+        </div>
+    </div>
+
+    <div id="cracked" class="section">
+        <div class="content-box" onclick="showSection('c1')">
+            <h2>4p r bot</h2>
+            <p>r bot premium de https://4pgang.sell.app</p>
+            <p>cracked by: Yael</p>
+        </div>
+        <div class="content-box" onclick="showSection('c2')">
+            <h2>Vacant</h2>
+            <p>Vacant</p>
+            <p>author: Vacant</p>
+        </div>
+    </div>
+
+    <div id="c1" class="section">
+        <div class="content-box">
+            <h2>4p r bot</h2>
+            <p>link de descarga de la mierda de 4p: <a href="https://lc.cx/ZNXzZc" target="_blank">https://lc.cx/ZNXzZc</a></p>
+            <p>img de el r bot: <a href="https://i.ibb.co/6F3zS2S/Yael-Trompo-Luxtran.png" target="_blank">https://i.ibb.co/6F3zS2S/Yael-Trompo-Luxtran.png</a></p>
+            <p>tienda de 4p: <a href="" target="_blank">https://i.ibb.co/6F3zS2S/Yael-Trompo-Luxtran.png</a></p>
+        </div>
+    </div>
+
+    <div id="c2" class="section">
+        <div class="content-box">
+            <h2>Vacant</h2>
+            <p>Vacant</p>
+        </div>
+    </div>
+
+    <div id="team" class="section">
+        <div class="team-background">
+            <div class="team-names">
+                <p>Yael</p>
+                <p>Trompo</p>
+                <p>Luxtran</p>
+            </div>
+        </div>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="musica.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        var audio = document.getElementById('background-music');
+
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function (section) {
+                section.classList.remove('active');
+            });
+
+            var selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.classList.add('active');
+            }
+
+            if (sectionId === 'team') {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        window.addEventListener('load', function () {
+            var hash = window.location.hash.substring(1);
+            if (!hash) {
+                hash = 'home';
+                window.location.hash = '#' + hash;
+            }
+            showSection(hash);
+        });
+
+        window.addEventListener('hashchange', function () {
+            var hash = window.location.hash.substring(1);
+            if (hash) {
+                showSection(hash);
+            }
+        });
+    </script>
+</body>
+
+</html>
+
