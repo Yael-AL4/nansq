@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^nansquad\.top [NC]
+RewriteRule ^(.*)$ http://www.nansquad.top/$1 [L,R=301]
