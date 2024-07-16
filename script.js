@@ -42,9 +42,8 @@ function startSpam() {
         spamInterval = setInterval(async () => {
             await sendMessage(webhookUrl, message);
         }, spamSpeed);
-    } else {
-        alert("Error: URL webhook o mensaje vacío.");
     }
+
 }
 
 function stopSpam() {
