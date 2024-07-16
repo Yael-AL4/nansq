@@ -24,8 +24,10 @@ function openSpammer() {
 
 function toggleSpam() {
     let button = document.querySelector('.form-container button');
+    let webhookUrl = document.getElementById('webhookUrl').value.trim();
+    let message = document.getElementById('message').value.trim();
 
-    if (button.textContent === 'Flood!!') {
+    if (button.textContent === 'Flood!!' && webhookUrl && message) {
         startSpam();
         button.textContent = 'Stop';
     } else {
@@ -38,12 +40,9 @@ function startSpam() {
     let webhookUrl = document.getElementById('webhookUrl').value.trim();
     let message = document.getElementById('message').value.trim();
 
-    if (webhookUrl && message) {
-        spamInterval = setInterval(async () => {
-            await sendMessage(webhookUrl, message);
-        }, spamSpeed);
-    }
-
+    spamInterval = setInterval(async () => {
+        await sendMessage(webhookUrl, message);
+    }, spamSpeed);
 }
 
 function stopSpam() {
@@ -65,7 +64,5 @@ async function sendMessage(webhookUrl, message) {
         }
     } catch (error) {
         console.error('Error:', error.message);
-        alert('error weebhook url invalida o msg vacio');
     }
 }
-
